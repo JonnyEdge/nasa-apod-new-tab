@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+    <style>
+      body {
+        margin: 0;
+        background: #000000
+      }
+
+      #newtab {
+        position: relative
+      }
+
+      #info {
+        display: none;
+        font-family: Helvetica, sans-serif;
+        position: fixed;
+        bottom: 50px;
+        right: 50px;
+        height: 25%;
+        width: 25%;
+        background: rgba(0, 0, 0, 0.5);
+        color: #ffffff;
+        width: 25%;
+        height: auto;
+        padding: 10px;
+      }
+
+      #attribution {
+        display: none;
+        position: fixed;
+        bottom: 50px;
+        left: 50px;
+        background: rgba(0, 0, 0, 0.5);
+        color: #ffffff;
+        width: auto;
+        height: auto;
+        padding: 10px;
+      }
+
+      #blurb {
+        margin-block-start: 1em;
+      }
+      
+      a {
+        color: #ffffff;
+      }
+
+      h1 {
+        font-family: Helvetica, sans-serif;
+        font-size: 18px;
+        margin-block-start: 0px;
+      }
+
+      hr {
+        color: #ffffff
+      }
+
+      p {
+        font-family: 'Source Sans Pro', sans-serif;
+        font-size: 14px;
+        margin-block-start: 0px;
+        margin-block-end: 0px;
+      }
+
+      img {
+        display: none;
+        min-height: 100%;
+        min-width: 1024px;
+        width: 100%;
+        height: auto;
+        position: fixed;
+        top: 0;
+        bottom: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="apicall.js"></script>
+    <div id="newtab">
+        <img id="image" src=""">
+        <div id="attribution">
+          <p id="copyright">&copy; 2019 <a href="https://apod.nasa.gov/apod/astropix.html">NASA Astronomy Picture of the Day</a></p>
+        </div>
+        <div id="info">
+          <div id="basic">
+              <h1 id="title"></h1>
+          </div>
+          <div id="expanded">
+              <hr>
+              <p id="blurb"></p>            
+          </div>
+        </div>
+    </div>
+  </body>
+</html>
